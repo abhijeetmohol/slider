@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+                Slick slider
+        </title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<style>
+			ul {
+				display: flex;
+				list-style-type: none;
+				justify-content:space-around;
+			}
+			.banner .slick-next{
+				position:absolute;
+				right:0px;
+				top:0px;
+			}
+			
+		</style>
+    </head>
+    <body>
+        
+		<div class="banner">
+		  <div>
+			
+			<ul class="nav justify-content-center">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#">Active</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link ">Disabled</a>
+			  </li>
+			</ul>
+			
+		  </div>
+		  <div>
+			
+			<ul class="nav flex-column">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#">Active</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link disabled">Disabled</a>
+			  </li>
+			</ul>
+			
+		  </div>
+		  <div>
+		  
+			<ul class="nav nav-tabs">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#">Active</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link disabled">Disabled</a>
+			  </li>
+			</ul>
+			
+		  </div>
+		</div>
+		<hr/>
+		  <div class="testimonials">
+			<div>your content1</div>
+			<div>your content2</div>
+			<div>your content3</div>
+		  </div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script>
+
+		$(document).ready(function(){
+		  $('.banner').slick({
+			// setting-name: setting-value
+			infinite: true,
+		    slidesToShow: 1,
+		    slidesToScroll: 1, 
+			autoplay: true,
+			autoplaySpeed: 1000,
+		  });
+
+		  $('.testimonials').slick({
+			// setting-name: setting-value
+			  infinite: true,
+			  slidesToShow: 2,
+			  slidesToScroll: 1,
+			  dots: false, 
+		  });
+		});
+		</script>
+    </body>
+</html>
+
+
+
+
